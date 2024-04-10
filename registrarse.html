@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  </head>
+<body>
+    <section>
+      <div class="row g-0">
+        <div class="col-lg-1 d-none d-lg-block border-right">
+          <div class="d-flex h-100">
+            <div class="align-self-center mx-auto">
+                <ion-icon name="search-outline"></ion-icon>            </div>
+          </div>
+        </div>
+        <div class="col-lg-11">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand text-blackp-md-1 mx-4" href="#"><!-- <img src="assets/heart-removebg-preview.png" width="100px" height="100px" alt="">--> Vacunación <span style="font-weight: bold;">Colombia <br> <span style="font-size: 18px;">¡Vacúnate, protege a los que amas!</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                 <li class="nav-item">
+                  <a class="nav-link text-black lead" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black lead" href="index.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black lead" href="nosotros.html">Nosotros</a>
+                </li>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light lead-xl d-inline-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ion-icon name="menu-outline"></ion-icon>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="inicio.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="index.html">Iniciar Sesión</a></li>
+                    <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
+                    <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-lg-1 border-right d-none d-lg-block">
+          <div class="d-flex">
+            <ul class="list-unstyled mx-auto align-self-center">
+              <li class="sideways"><a href="#" class="text-black">Instagram</a></li>
+              <li class="sideways"><a href="#" class="text-black">Facebook</a></li>
+              <li class="sideways"><a href="#" class="text-black">YouTube</a></li>
+              <li class="sideways"><a href="#" class="text-black">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 d-flex" id="mt">
+            <div class="container mt-5 px-5 content">
+              <h1 class="text-uppercase mb-4" style="font-weight: bold;">¡Sé el héroe que el mundo necesita!</h1>
+              <p class="lead-xl mb-4">Cuidarte es proteger a los que más quieres</p>
+              <div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LIsT9bYinms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-5 px-0">
+
+            <div class="col p-4 rounded-end">
+                <form action="registro.php" method ="POST" class="container align-self-center rounded shadow p-2" id="bg">
+              <h2 class="fw-bold text-center py-4">Registra tus datos</h2>
+              
+              <div class="form-group p-4">
+                Nombre de usuario:  <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre de usuario" style="width: 400px; display: inline-block;">
+              </div> 
+              
+              <div class="form-group p-4 justify-content-around">
+                Edad:  <input type="text" id="edad" name="edad" placeholder="Escriba su edad" style="width: 150px;">
+                Genero:  <input type="text" id="genero" name="genero" placeholder="M(Masculino)-F(Femenino)"  style="width: 150px;">
+              </div>
+              
+              <div class="form-group p-1">
+                <label class="form-label" for="email">Correo Electronico</label>
+                <input class="form-control" type="email" name="correo" id="correo" placeholder="Escriba su correo electronico" style="width: 400px; display: inline-block;">
+              </div>
+              
+              <div class="form-group p-2">
+                <label class="form-label" for="password">Contraseña</label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Escriba su contraseña (mayor a 8 digitos)" style="width: 400px; display: inline-block;">
+              </div>
+     
+              
+              <div class="form-group p-4">
+                <input class="btn btn-success w-50 p-2" id="submit" type="submit" value="Crear Cuenta">
+              <p class="p-2">¿Ya tienes una cuenta?<a class="link fw-bold text-muted text-decoration-none" href="login.html"><button class="btn btn-dark fw-bold">Iniciar sesión</button></a></p>             </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    </section>
+
+</body>
